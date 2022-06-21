@@ -7,7 +7,7 @@
 
 ## Model Details
 Basic information about the model.
-* Person or organization developing model
+* Person or organization developing model: Patrick Hall (jphall@gwu.edu), Shuning Ma (shuningma@gwu.edu)
 * Model date
 * Model version
 * Model type

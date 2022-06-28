@@ -1,4 +1,4 @@
-# DNSC6290
+# DNSC6290 Responsible Machine Learning
 
 1. Elastic net
 2. Monotonic XGBoost

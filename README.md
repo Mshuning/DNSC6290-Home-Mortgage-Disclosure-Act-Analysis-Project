@@ -13,13 +13,32 @@
 * __Model implementation code__: [DNSC6290](https://github.com/Mshuning/DNSC6290)
 
 ## Intended Use
-Use cases that were envisioned during development.
-* Primary intended uses
-* Primary intended users
-* Out-of-scope use cases
+* __Primary intended uses__: This model is an *example* probability of XGBoost model, with an *example* use case for determining whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages.
+* __Primary intended users__: Students in GWU DNSC 6290 course.
+* __Out-of-scope use cases__: Any use beyond an educational example is out-of-scope.
 
 ## Training Data
-May not be possible to provide in practice. When possible, this section should mirror Evaluation Data. If such detail is not possible, minimal allowable information should be provided here, such as details of the distribution over various factors in the training datasets.
+* **Data dictionary**:
+
+| Name | Modeling Role | Measurement Level| Description|
+| ---- | ------------- | ---------------- | ---------- |
+|**ID**| ID | int | unique row indentifier |
+| **LIMIT_BAL** | input | float | amount of previously awarded credit |
+| **SEX** | demographic information | int | 1 = male; 2 = female
+| **RACE** | demographic information | int | 1 = hispanic; 2 = black; 3 = white; 4 = asian |
+| **EDUCATION** | demographic information | int | 1 = graduate school; 2 = university; 3 = high school; 4 = others |
+| **MARRIAGE** | demographic information | int | 1 = married; 2 = single; 3 = others |
+| **AGE** | demographic information | int | age in years |
+| **PAY_0, PAY_2 - PAY_6** | inputs | int | history of past payment; PAY_0 = the repayment status in September, 2005; PAY_2 = the repayment status in August, 2005; ...; PAY_6 = the repayment status in April, 2005. The measurement scale for the repayment status is: -1 = pay duly; 1 = payment delay for one month; 2 = payment delay for two months; ...; 8 = payment delay for eight months; 9 = payment delay for nine months and above |
+| **BILL_AMT1 - BILL_AMT6** | inputs | float | amount of bill statement; BILL_AMNT1 = amount of bill statement in September, 2005; BILL_AMT2 = amount of bill statement in August, 2005; ...; BILL_AMT6 = amount of bill statement in April, 2005 |
+| **PAY_AMT1 - PAY_AMT6** | inputs | float | amount of previous payment; PAY_AMT1 = amount paid in September, 2005; PAY_AMT2 = amount paid in August, 2005; ...; PAY_AMT6 = amount paid in April, 2005 |
+| **DELINQ_NEXT**| target | int | whether a customer's next payment is delinquent (late), 1 = late; 0 = on-time |
+
+* **Source of training data**: GWU Blackboard, email `shuningma@gwu.edu` for more information
+* **How training data was divided into training and validation data**: 60% training, 20% validation, 20% test
+* **Number of rows in training and validation data**:
+  * Training rows: 18,000
+  * Validation rows: 6,000
 
 ## Evaluation Data
 Details on the dataset(s) used for the quantitative analyses in the card.

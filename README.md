@@ -5,6 +5,13 @@
 3. Explainable Boosting Machine
 4. PiML
 
+## Baisc Information
+* __Person or organization developing model__: Patirck Hall, `jphall@gwu.edu` & Shuning Ma, `shuningma@gwu.edu`
+* __Model date__: June, 2022
+* __Model version__: 1.0
+* __License__: Apache License 2.0
+* __Model implementation code__: [DNSC6290](https://github.com/Mshuning/DNSC6290)
+
 ## Intended Use
 Use cases that were envisioned during development.
 * Primary intended uses

@@ -61,7 +61,7 @@
 * **Columns used as inputs in the final model**: 'term_360', 'conforming', 'debt_to_income_ratio_missing', 'loan_amount_std', 'loan_to_value_ratio_std', 'no_intro_rate_period_std', 'intro_rate_period_std', 'property_value_std', 'income_std', 'debt_to_income_ratio_std'
 - **Column(s) used as target(s) in the final model**: 'high_priced'
 - **Type of model**: Monotonic XGBoost model
-- **Software used to implement the model**:  Colaboratory & Jupiter Notebook & sklearn
+- **Software used to implement the model**:  h2o, interpret, jupyter, matplotlib, numpy, pandas, scikit-learn, seaborn, xgboost
 - **Version of the modeling software**: 
     - h2o==3.32.1.3
     - interpret==0.2.4
@@ -72,12 +72,20 @@
     - scikit-learn==0.24.2
     - seaborn==0.11.1
     - xgboost==1.4.2
-- **Hyperparameters or other settings of your model**: DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
-                       max_depth=6, max_features=None, max_leaf_nodes=None,
-                       min_impurity_decrease=0.0, min_impurity_split=None,
-                       min_samples_leaf=1, min_samples_split=2,
-                       min_weight_fraction_leaf=0.0, presort='deprecated',
-                       random_state=12345, splitter='best')
+- **Hyperparameters or other settings of your model**: 
+    - 'max_bins': 512,
+    - 'max_interaction_bins': 32,
+    - 'interactions': 10,
+    - 'outer_bags': 8,
+    - 'inner_bags': 4,
+    - 'learning_rate': 0.05,
+    - 'validation_size': 0.5,
+    - 'min_samples_leaf': 5,
+    - 'max_leaves': 5,
+    - 'early_stopping_rounds': 100.0,
+    - 'n_jobs': 4,
+    - 'random_state': 12345
+    - 'mono_constraints': (1, 1, 1, -1, 0, -1, 0, 1, 0, 1)
 
 ## Quantitative Analyses
 * Unitary results

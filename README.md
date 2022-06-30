@@ -34,7 +34,7 @@
 | **PAY_AMT1 - PAY_AMT6** | inputs | float | amount of previous payment; PAY_AMT1 = amount paid in September, 2005; PAY_AMT2 = amount paid in August, 2005; ...; PAY_AMT6 = amount paid in April, 2005 |
 | **DELINQ_NEXT**| target | int | whether a customer's next payment is delinquent (late), 1 = late; 0 = on-time |
 
-* **Source of training data**: GWU Blackboard, email `shuningma@gwu.edu` for more information
+* **Source of training data**: [Home Mortgage Disclosure Act (HMDA) data] (https://www.consumerfinance.gov/data-research/hmda/)
 * **How training data was divided into training and validation data**: 70% training, 30% validation
 * **Number of rows in training and validation data**:
   * Training rows: 112,253
@@ -42,9 +42,9 @@
 
 ## Evaluation Data
 Details on the dataset(s) used for the quantitative analyses in the card.
-* Datasets
-* Motivation
-* Preprocessing
+* **Source of test data**: [Home Mortgage Disclosure Act (HMDA) data] (https://www.consumerfinance.gov/data-research/hmda/)
+* **Number of rows in test data**: 19,831
+* **State any differences in columns between training and test data**: None
 
 ## Model Details
 Basic information about the model.

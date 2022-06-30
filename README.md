@@ -22,8 +22,7 @@
 
 | Name | Modeling Role | Measurement Level| Description|
 | ---- | ------------- | ---------------- | ---------- |
-|**ID**| ID | int | unique row indentifier |
-| **LIMIT_BAL** | input | float | amount of previously awarded credit |
+|**row_id**| ID | int | unique row indentifier |
 | **black** | demographic information | binary | 1 = black; 0 = non-black |
 | **asian** | demographic information | binary | 1 = asian; 0 = non-asian |
 | **white** | demographic information | binary | 1 = white; 0 = non-white |

@@ -1,10 +1,5 @@
 # DNSC6290 Responsible Machine Learning
 
-1. Elastic net
-2. Monotonic XGBoost
-3. Explainable Boosting Machine
-4. PiML
-
 ## Baisc Information
 * __Person or organization developing model__: Patirck Hall, `jphall@gwu.edu` & Shuning Ma, `shuningma@gwu.edu`
 * __Model date__: June, 2022
@@ -60,9 +55,11 @@
 ## Model Details
 - **Trained models**
     - [Elastic net](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
-    - Monotonic XGBoost
-    - Explainable Boosting Machine
-    - PiML
+    - [Monotonic XGBoost](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
+    - [Explainable Boosting Machine](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
+    - [PiML-Explainable Boosting Machine](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
+    - [PiML-ReLU-DNN](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
+    - [PiML-GAMI-Net](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
 * **Columns used as inputs in the final model**: 'term_360', 'conforming', 'debt_to_income_ratio_missing', 'loan_amount_std', 'loan_to_value_ratio_std', 'no_intro_rate_period_std', 'intro_rate_period_std', 'property_value_std', 'income_std', 'debt_to_income_ratio_std'
 - **Column(s) used as target(s) in the final model**: 'high_priced'
 - **Type of model**: Monotonic XGBoost model

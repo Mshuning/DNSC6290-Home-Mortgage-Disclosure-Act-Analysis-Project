@@ -24,15 +24,28 @@
 | ---- | ------------- | ---------------- | ---------- |
 |**ID**| ID | int | unique row indentifier |
 | **LIMIT_BAL** | input | float | amount of previously awarded credit |
-| **SEX** | demographic information | int | 1 = male; 2 = female
-| **RACE** | demographic information | int | 1 = hispanic; 2 = black; 3 = white; 4 = asian |
-| **EDUCATION** | demographic information | int | 1 = graduate school; 2 = university; 3 = high school; 4 = others |
-| **MARRIAGE** | demographic information | int | 1 = married; 2 = single; 3 = others |
-| **AGE** | demographic information | int | age in years |
-| **PAY_0, PAY_2 - PAY_6** | inputs | int | history of past payment; PAY_0 = the repayment status in September, 2005; PAY_2 = the repayment status in August, 2005; ...; PAY_6 = the repayment status in April, 2005. The measurement scale for the repayment status is: -1 = pay duly; 1 = payment delay for one month; 2 = payment delay for two months; ...; 8 = payment delay for eight months; 9 = payment delay for nine months and above |
-| **BILL_AMT1 - BILL_AMT6** | inputs | float | amount of bill statement; BILL_AMNT1 = amount of bill statement in September, 2005; BILL_AMT2 = amount of bill statement in August, 2005; ...; BILL_AMT6 = amount of bill statement in April, 2005 |
-| **PAY_AMT1 - PAY_AMT6** | inputs | float | amount of previous payment; PAY_AMT1 = amount paid in September, 2005; PAY_AMT2 = amount paid in August, 2005; ...; PAY_AMT6 = amount paid in April, 2005 |
-| **DELINQ_NEXT**| target | int | whether a customer's next payment is delinquent (late), 1 = late; 0 = on-time |
+| **black** | demographic information | binary | 1 = black; 0 = non-black |
+| **asian** | demographic information | binary | 1 = asian; 0 = non-asian |
+| **white** | demographic information | binary | 1 = white; 0 = non-white |
+| **amind** | demographic information | binary | 1 = amind; 0 = non-amind |
+| **hipac** | demographic information | binary | 1 = hipac; 0 = non-hipac |
+| **hispanic** | demographic information | binary | 1 = hispanic; 0 = non-hispanic |
+| **non_hispanic** | demographic information | binary | 1 = non_hispanic; 0 = hispanic |
+| **male** | demographic information | binary | 1 = male; 0 = female |
+| **female** | demographic information | binary | 1 = female; 0 = male |
+| **agegte62** | demographic information | binary | 1 = agegte62; 0 = agelt62 |
+| **agelt62** | demographic information | binary | 1 = agelt62; 0 = agegte62 |
+| **conforming** | inputs | binary | 1 = the mortgage conforms to normal standards; 0 = the loan is different |
+| **debt_to_income_ratio_std** | inputs | float | standardized debt-to-income ratio for mortgage applicants |
+| **debt_to_income_ratio_missing** | inputs | binary | 1 = missing debt_to_income_ratio_std; 0 = non-missing debt_to_income_ratio_std |
+| **income_std** | inputs | float | standardized income for mortgage applicants |
+| **loan_amount_std** | inputs | float | standardized amount of the mortgage for applicants |
+| **intro_rate_period_std** | inputs | float | standardized introductory rate period for mortgage applicants |
+| **loan_to_value_ratio_std** | inputs | float | ratio of the mortgage size to the value of the property for mortgage applicants |
+| **no_intro_rate_period_std** | inputs | binary | -4.09174686250922 = a mortgage does not include an introductory rate period; 0.244394395255126 = a mortgage includes an introductory rate period |
+| **property_value_std** | inputs | float | value of the mortgaged property |
+| **term_360** | inputs | binary | 1 = the mortgage is a standard 360 month mortgage; 0 = the mortgage is a different type of mortgage |
+| **high_priced**| target | binary | whether the annual percentage rate (APR) charged for a mortgage is (not) 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages, 1 = is; 0 = not |
 
 * **Source of training data**: [Home Mortgage Disclosure Act (HMDA) data](https://www.consumerfinance.gov/data-research/hmda/)
 * **How training data was divided into training and validation data**: 70% training, 30% validation

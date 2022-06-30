@@ -41,22 +41,22 @@
   * Validation rows: 48,085
 
 ## Evaluation Data
-Details on the dataset(s) used for the quantitative analyses in the card.
 * **Source of test data**: [Home Mortgage Disclosure Act (HMDA) data](https://www.consumerfinance.gov/data-research/hmda/)
 * **Number of rows in test data**: 19,831
 * **State any differences in columns between training and test data**: None
 
 ## Model Details
-Basic information about the model.
-* Person or organization developing model: Patrick Hall (jphall@gwu.edu), Shuning Ma (shuningma@gwu.edu)
-* Model date
-* Model version
-* Model type
-* Information about training algorithms, parameters, fairness constraints or other applied approaches, and features
-* Paper or other resource for more information
-* Citation details
-* License
-* Where to send questions or comments about the model
+* **Columns used as inputs in the final model**: 'LIMIT_BAL', 'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1', 'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6', 'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
+* **Column(s) used as target(s) in the final model**: 'DELINQ_NEXT'
+* **Type of model**: Decision Tree model
+* **Software used to implement the model**:  Colaboratory & Jupiter Notebook & sklearn
+* **Version of the modeling software**: Ubuntu 18.04.5 LTS & Python 3.7.11 & 0.22.2.post1
+* **Hyperparameters or other settings of your model**: DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=6, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, presort='deprecated',
+                       random_state=12345, splitter='best')
 
 ## Quantitative Analyses
 * Unitary results

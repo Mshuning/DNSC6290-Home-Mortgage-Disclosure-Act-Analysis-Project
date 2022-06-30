@@ -59,7 +59,7 @@
 
 ## Model Details
 - **Trained models**
-    - [Elastic net](assignment_1.ipynb)
+    - [Elastic net](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
     - Monotonic XGBoost
     - Explainable Boosting Machine
     - PiML

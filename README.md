@@ -58,6 +58,11 @@
 * **State any differences in columns between training and test data**: None
 
 ## Model Details
+- **Trained models**
+    - [Elastic net](assignment_1.ipynb)
+    - Monotonic XGBoost
+    - Explainable Boosting Machine
+    - PiML
 * **Columns used as inputs in the final model**: 'term_360', 'conforming', 'debt_to_income_ratio_missing', 'loan_amount_std', 'loan_to_value_ratio_std', 'no_intro_rate_period_std', 'intro_rate_period_std', 'property_value_std', 'income_std', 'debt_to_income_ratio_std'
 - **Column(s) used as target(s) in the final model**: 'high_priced'
 - **Type of model**: Monotonic XGBoost model

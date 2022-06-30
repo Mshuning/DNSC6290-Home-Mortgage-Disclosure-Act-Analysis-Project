@@ -58,12 +58,21 @@
 * **State any differences in columns between training and test data**: None
 
 ## Model Details
-* **Columns used as inputs in the final model**: 'LIMIT_BAL', 'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1', 'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6', 'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
-* **Column(s) used as target(s) in the final model**: 'DELINQ_NEXT'
-* **Type of model**: Decision Tree model
-* **Software used to implement the model**:  Colaboratory & Jupiter Notebook & sklearn
-* **Version of the modeling software**: Ubuntu 18.04.5 LTS & Python 3.7.11 & 0.22.2.post1
-* **Hyperparameters or other settings of your model**: DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+* **Columns used as inputs in the final model**: 'term_360', 'conforming', 'debt_to_income_ratio_missing', 'loan_amount_std', 'loan_to_value_ratio_std', 'no_intro_rate_period_std', 'intro_rate_period_std', 'property_value_std', 'income_std', 'debt_to_income_ratio_std'
+- **Column(s) used as target(s) in the final model**: 'high_priced'
+- **Type of model**: Monotonic XGBoost model
+- **Software used to implement the model**:  Colaboratory & Jupiter Notebook & sklearn
+- **Version of the modeling software**: 
+    - h2o==3.32.1.3
+    - interpret==0.2.4
+    - jupyter==1.0.0 
+    - matplotlib==3.3.4
+    - numpy==1.19.5
+    - pandas==1.1.5
+    - scikit-learn==0.24.2
+    - seaborn==0.11.1
+    - xgboost==1.4.2
+- **Hyperparameters or other settings of your model**: DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
                        max_depth=6, max_features=None, max_leaf_nodes=None,
                        min_impurity_decrease=0.0, min_impurity_split=None,
                        min_samples_leaf=1, min_samples_split=2,

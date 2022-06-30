@@ -64,10 +64,10 @@
      - **Models with AIR > 0.8**
          - [Explainable Boosting Machine](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%203/assignment_3.ipynb)
          - [Monotonic XGBoost](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%203/assignment_3_2.ipynb)
-     - **Best model**: [Monotonic XGBoost](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%203/assignment_3_2.ipynb)
+     - **Final best model**: [Monotonic XGBoost](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%205/assignment_5_2.ipynb)
 * **Columns used as inputs in the final model**: 'term_360', 'conforming', 'debt_to_income_ratio_missing', 'loan_amount_std', 'loan_to_value_ratio_std', 'no_intro_rate_period_std', 'intro_rate_period_std', 'property_value_std', 'income_std', 'debt_to_income_ratio_std'
 - **Column(s) used as target(s) in the final model**: 'high_priced'
-- **Type of model**: Monotonic XGBoost model
+- **Type of model**: [Monotonic XGBoost model](https://xgboost.readthedocs.io/en/stable/index.html)
 - **Software used to implement the model**:  h2o, interpret, jupyter, matplotlib, numpy, pandas, scikit-learn, seaborn, xgboost
 - **Version of the modeling software**: 
     - h2o==3.32.1.3
@@ -95,8 +95,14 @@
     - 'mono_constraints': (1, 1, 1, -1, 0, -1, 0, 1, 0, 1)
 
 ## Quantitative Analyses
-* Unitary results
-* Intersectional results
+* **Metrics used to evaluate your final model**: AUC & AIR
+* **State the final values of the metrics for all data: training, validation, and test data**:
+  * **Validation AUC**: 0.7920
+  * **Asian-to-White AIR**: 1.146
+  * **Black-to-White AIR**: 0.805
+  * **Female-to-Male AIR**: 0.949
+* **Provide any plots related to your data or final model -- be sure to label the plots!**:
+![image](https://user-images.githubusercontent.com/31402450/131202053-a66089fc-1fcf-4fac-b4ab-28bc943aa971.png)
 
 ## Factors
 Factors could include demographic or phenotypic groups, environmental conditions, technical attributes, or others listed in Section 4.3.

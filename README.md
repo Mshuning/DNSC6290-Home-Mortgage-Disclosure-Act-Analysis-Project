@@ -79,7 +79,7 @@ Final selected model is **Monotonic XGBoost**, and the other models are here for
 - **Final selected model**: Monotonic XGBoost
    - [Basic version](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
    - [Remediation of discovered discrimination version](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%203/assignment_3_2.ipynb)
-   - [Stolen decision tree model](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%204/assignment_4_2.ipynb)
+   - [Red-teaming version](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%204/assignment_4_2.ipynb)
    - [Debugged version](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%205/assignment_5_2.ipynb)
 * **Columns used as inputs in the final model**: 'term_360', 'conforming', 'debt_to_income_ratio_missing', 'loan_amount_std', 'loan_to_value_ratio_std', 'no_intro_rate_period_std', 'intro_rate_period_std', 'property_value_std', 'income_std', 'debt_to_income_ratio_std'
 - **Column(s) used as target(s) in the final model**: 'high_priced'

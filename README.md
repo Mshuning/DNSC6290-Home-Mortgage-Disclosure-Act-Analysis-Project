@@ -97,10 +97,18 @@
 ## Quantitative Analyses
 * **Metrics used to evaluate your final model**: AUC & AIR
 * **State the final values of the metrics for all data: training, validation, and test data**:
-  * **Validation AUC**: 0.7920
-  * **Asian-to-White AIR**: 1.146
-  * **Black-to-White AIR**: 0.805
-  * **Female-to-Male AIR**: 0.949
+
+  | Partition | AUC | 
+  | -------------|--------| 
+  | Training | 0.7905 | 
+  | Validation | 0.7920 | 
+
+  | Compare v. Control | AIR | 
+  | ----------------------------|-------| 
+  | Asian people vs. White people | 1.146 |  
+  | Black people vs. White people | 0.805 | 
+  | Females vs. Males | 0.949 | 
+
 * **Provide any plots related to your data or final model -- be sure to label the plots!**:
 ![image](https://user-images.githubusercontent.com/31402450/131202053-a66089fc-1fcf-4fac-b4ab-28bc943aa971.png)
 

@@ -69,6 +69,7 @@ Final selected model is **Monotonic XGBoost**, and the other models are here for
 * **Number of rows in training and validation data**:
   * Training rows: 112,253
   * Validation rows: 48,085
+![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/features.png)
 
 ## Evaluation Data
 * **Source of test data**: [Home Mortgage Disclosure Act (HMDA) data](https://www.consumerfinance.gov/data-research/hmda/)

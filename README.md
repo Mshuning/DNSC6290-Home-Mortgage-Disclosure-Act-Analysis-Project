@@ -7,6 +7,28 @@
 * __License__: [Apache License 2.0](LICENSE.md)
 * __Model implementation code__: [DNSC6290](https://github.com/Mshuning/DNSC6290)
 
+## Assignment workflows
+1. **Training basic interpretable models**
+   - [Elastic net](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
+   - [Monotonic XGBoost](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
+   - [Explainable Boosting Machine](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
+   - [PiML-EBM](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
+   - [PiML-ReLU-DNN](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
+   - [PiML-GAMI-Net](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
+2. **Post-hoc explanations**
+   - [Elastic net](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%202/assignment_2.ipynb)
+   - [Monotonic XGBoost](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%202/assignment_2.ipynb)
+   - [Explainable Boosting Machine](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%202/assignment_2.ipynb)
+3. **Bias testing**
+   - [Explainable Boosting Machine](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%203/assignment_3.ipynb)
+   - [Monotonic XGBoost](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%203/assignment_3_2.ipynb)
+4. **Red-teaming**
+   - [Explainable Boosting Machine](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%204/assignment_4.ipynb)
+   - [Monotonic XGBoost](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%204/assignment_4_2.ipynb)
+5. **Model debugging**
+   - [Explainable Boosting Machine](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%205/assignment_5.ipynb)
+   - [Monotonic XGBoost](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%205/assignment_5_2.ipynb)
+
 ## Intended Use
 * __Primary intended uses__: This model is an *example* probability of XGBoost model, with an *example* use case for determining whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages.
 * __Primary intended users__: Students in GWU DNSC 6290 course.

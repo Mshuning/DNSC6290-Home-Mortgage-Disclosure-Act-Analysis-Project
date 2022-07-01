@@ -8,6 +8,7 @@
 * __Model implementation code__: [DNSC6290](https://github.com/Mshuning/DNSC6290)
 
 ## Assignment workflows
+Final selected model is **Monotonic XGBoost**, and the other models are here for comparison.
 1. **Training basic interpretable models**
    - [Elastic net](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
    - [Monotonic XGBoost](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
@@ -75,18 +76,11 @@
 * **State any differences in columns between training and test data**: None
 
 ## Model Details
-- **Trained models**
-    - **Baisc models**
-         - [Elastic net](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
-         - [Monotonic XGBoost](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
-         - [Explainable Boosting Machine](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
-         - [PiML-EBM](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
-         - [PiML-ReLU-DNN](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
-         - [PiML-GAMI-Net](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
-     - **Models with AIR > 0.8**
-         - [Explainable Boosting Machine](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%203/assignment_3.ipynb)
-         - [Monotonic XGBoost](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%203/assignment_3_2.ipynb)
-     - **Final best model**: [Monotonic XGBoost](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%205/assignment_5_2.ipynb)
+- **Final selected model**: Monotonic XGBoost
+   - [Basic version](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%201/assignment_1.ipynb)
+   - [Remediation of discovered discrimination version](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%203/assignment_3_2.ipynb)
+   - [Stolen decision tree model](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%204/assignment_4_2.ipynb)
+   - [Debugged version](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%205/assignment_5_2.ipynb)
 * **Columns used as inputs in the final model**: 'term_360', 'conforming', 'debt_to_income_ratio_missing', 'loan_amount_std', 'loan_to_value_ratio_std', 'no_intro_rate_period_std', 'intro_rate_period_std', 'property_value_std', 'income_std', 'debt_to_income_ratio_std'
 - **Column(s) used as target(s) in the final model**: 'high_priced'
 - **Type of model**: [Monotonic XGBoost model](https://xgboost.readthedocs.io/en/stable/index.html)

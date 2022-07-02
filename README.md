@@ -143,6 +143,8 @@ Final selected model is **Monotonic XGBoost**, and the other models are here for
      ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/partial%20dependence8.png)
      ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/partial%20dependence9.png)
      ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/partial%20dependence10.png)
+   * **[Bias testing grid search results](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%203/assignment_3_2.ipynb)**:
+     ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/bias%20testing%20grid%20search%20results.png)
 
 ## Ethical Considerations
 * **Describe potential negative impacts of using your model**

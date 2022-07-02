@@ -129,7 +129,7 @@ Final selected model is **Monotonic XGBoost**, and the other models are here for
 
 * **Provide any plots related to your data or final model -- be sure to label the plots!**:
    * **[Global feature importance](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%202/assignment_2.ipynb)**:
-     ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/global%20feature%20importance.png)
+     ![Global feature importance](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/global%20feature%20importance.png)
    * **[Local feature importance](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%202/assignment_2.ipynb)**:
    * **[Partial dependence](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%202/assignment_2.ipynb)**:
 

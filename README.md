@@ -85,7 +85,7 @@ Final selected model is **Monotonic XGBoost**, and the other models are here for
 * **Columns used as inputs in the final model**: 'term_360', 'conforming', 'debt_to_income_ratio_missing', 'loan_amount_std', 'loan_to_value_ratio_std', 'no_intro_rate_period_std', 'intro_rate_period_std', 'property_value_std', 'income_std', 'debt_to_income_ratio_std'
 - **Column(s) used as target(s) in the final model**: 'high_priced'
 - **Type of model**: [Monotonic XGBoost model](https://xgboost.readthedocs.io/en/stable/index.html)
-- **Software used to implement the model**:  h2o, interpret, jupyter, matplotlib, numpy, pandas, scikit-learn, seaborn, xgboost
+- **Software used to implement the model**: `h2o`, `interpret`, `jupyter`, `matplotlib`, `numpy`, `pandas`, `scikit-learn`, `seaborn`, `xgboost`
 - **Version of the modeling software**: 
     - h2o==3.32.1.3
     - interpret==0.2.4
@@ -151,13 +151,14 @@ Final selected model is **Monotonic XGBoost**, and the other models are here for
    * **[Adversarial examples](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%204/assignment_4_2.ipynb)**:
      ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/adversarial%20examples.png)
    * **[Global logloss residuals](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%205/assignment_4_5.ipynb)**:
+     
      ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/global%20logloss%20residuals.png)
 
 ## Ethical Considerations
 * **Describe potential negative impacts of using your model**
   * **Math or software problems**: The importance of PAY_0 is too high, which is a bad result in real world. It tells everthing and makes the whole model even useless. 
-  * **Real-world risks: who, what, when or how**: The Adverse impact ratio of Black-to-White and Hispanic-to-White are not very well. When using this model to give credit line increase to people, less black and hispanic people will be given credit line increase compared to white people with similar conditions. 
+  * **Real-world risks: who, what, when or how**: The Adverse impact ratio of Black-to-White, although > 0.8, are relatively low. When using this model to give credit line increase to people, less black and hispanic people will be given credit line increase compared to white people with similar conditions. 
 * **Describe potential uncertainties relating to the impacts of using your model**
-  * **Math or software problems**: Can easily attcked by hackers changing PAY_0 to determine results they want. 
+  * **Math or software problems**: Due to compatibility issues between `h2o` and `xgboost`, 
   * **Real-world risks: who, what, when or how**: May exposed to  well-known risks such as DDOS or man-in-the-middle attacks, and packages it depends on could potentially be hacked to conceal an attack payload. 
 * **Describe any unexpected or results**: Although this model was tested and remediated for bias, there is much more to bias than models and data, and this model should be monitored for bias issues moving forward.

@@ -119,6 +119,7 @@ Final selected model is **Monotonic XGBoost**, and the other models are here for
   | -------------|--------| 
   | Training | 0.7905 | 
   | Validation | 0.7920 | 
+  | Evaluation | 0.8294 | 
 
   | Compare v. Control | AIR | 
   | ----------------------------|-------| 
@@ -127,19 +128,16 @@ Final selected model is **Monotonic XGBoost**, and the other models are here for
   | Females vs. Males | 0.949 | 
 
 * **Provide any plots related to your data or final model -- be sure to label the plots!**:
-![image](https://user-images.githubusercontent.com/31402450/131202053-a66089fc-1fcf-4fac-b4ab-28bc943aa971.png)
-
-## Factors
-Factors could include demographic or phenotypic groups, environmental conditions, technical attributes, or others listed in Section 4.3.
-* Relevant factors
-* Evaluation factors
-
-## Metrics
-Metrics should be chosen to reflect potential realworld impacts of the model.
-* Model performance measures
-* Decision thresholds
-* Variation approaches
+   * **[Global feature importance](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%202/assignment_2.ipynb)**:
+     ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/global%20feature%20importance.png)
+   * **[Local feature importance](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%202/assignment_2.ipynb)**:
+   * **[Partial dependence](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%202/assignment_2.ipynb)**:
 
 ## Ethical Considerations
-
-## Caveats and Recommendations
+* **Describe potential negative impacts of using your model**
+  * **Math or software problems**: The importance of PAY_0 is too high, which is a bad result in real world. It tells everthing and makes the whole model even useless. 
+  * **Real-world risks: who, what, when or how**: The Adverse impact ratio of Black-to-White and Hispanic-to-White are not very well. When using this model to give credit line increase to people, less black and hispanic people will be given credit line increase compared to white people with similar conditions. 
+* **Describe potential uncertainties relating to the impacts of using your model**
+  * **Math or software problems**: Can easily attcked by hackers changing PAY_0 to determine results they want. 
+  * **Real-world risks: who, what, when or how**: May exposed to  well-known risks such as DDOS or man-in-the-middle attacks, and packages it depends on could potentially be hacked to conceal an attack payload. 
+* **Describe any unexpected or results**: Although this model was tested and remediated for bias, there is much more to bias than models and data, and this model should be monitored for bias issues moving forward.

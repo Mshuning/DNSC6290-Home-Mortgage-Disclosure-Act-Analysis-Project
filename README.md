@@ -129,9 +129,20 @@ Final selected model is **Monotonic XGBoost**, and the other models are here for
 
 * **Provide any plots related to your data or final model -- be sure to label the plots!**:
    * **[Global feature importance](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%202/assignment_2.ipynb)**:
-     ![Global feature importance](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/global%20feature%20importance.png)
+     ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/global%20feature%20importance.png)
    * **[Local feature importance](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%202/assignment_2.ipynb)**:
+     ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/local%20feature%20importance.png)
    * **[Partial dependence](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%202/assignment_2.ipynb)**:
+     ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/partial%20dependence1.png)
+     ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/partial%20dependence2.png)
+     ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/partial%20dependence3.png)
+     ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/partial%20dependence4.png)
+     ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/partial%20dependence5.png)
+     ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/partial%20dependence6.png)
+     ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/partial%20dependence7.png)
+     ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/partial%20dependence8.png)
+     ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/partial%20dependence9.png)
+     ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/partial%20dependence10.png)
 
 ## Ethical Considerations
 * **Describe potential negative impacts of using your model**

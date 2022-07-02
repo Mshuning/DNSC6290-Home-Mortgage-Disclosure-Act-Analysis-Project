@@ -157,8 +157,8 @@ Final selected model is **Monotonic XGBoost**, and the other models are here for
 ## Ethical Considerations
 * **Describe potential negative impacts of using your model**
   * **Math or software problems**: The importance of PAY_0 is too high, which is a bad result in real world. It tells everthing and makes the whole model even useless. 
-  * **Real-world risks: who, what, when or how**: The Adverse impact ratio of Black-to-White, although > 0.8, are relatively low. When using this model to give credit line increase to people, less black and hispanic people will be given credit line increase compared to white people with similar conditions. 
+  * **Real-world risks: who, what, when or how**: The Adverse impact ratio of Black-to-White, although > 0.8, is relatively low (0.805). When using this model to predict high-priced mortgages, less black people will be given high-quality results compared to white people with similar conditions. 
 * **Describe potential uncertainties relating to the impacts of using your model**
-  * **Math or software problems**: Due to compatibility issues between `h2o` and `xgboost`, 
-  * **Real-world risks: who, what, when or how**: May exposed to  well-known risks such as DDOS or man-in-the-middle attacks, and packages it depends on could potentially be hacked to conceal an attack payload. 
+  * **Math or software problems**: Due to compatibility issues between `h2o` and `xgboost`, the [stolen decision tree model](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%204/assignment_4_2.ipynb) generated had unusual big values, causing [adversial examples](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%204/assignment_4_2.ipynb) full of missing values. 
+  * **Real-world risks: who, what, when or how**: Hackers may steal the model to do model extraction attack. According to [adversial examples results in Red-teaming](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%204/assignment_4_2.ipynb), the hackers can get predictions they want by inputting missing values in multiple features. 
 * **Describe any unexpected or results**: Although this model was tested and remediated for bias, there is much more to bias than models and data, and this model should be monitored for bias issues moving forward.

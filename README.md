@@ -106,7 +106,6 @@ Final selected model is **Monotonic XGBoost**, and the other models are here for
     - 'subsample': 0.3,
     - 'min_child_weight': 10,
     - 'gamma': 0.2
-    - 'early_stopping_rounds': 100.0,
     - 'n_jobs': 4,
     - 'random_state': 12345,
     - 'mono_constraints': (1, 1, 1, -1, 0, -1, 0, 1, 0, 1)

@@ -144,7 +144,14 @@ Final selected model is **Monotonic XGBoost**, and the other models are here for
      ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/partial%20dependence9.png)
      ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/partial%20dependence10.png)
    * **[Bias testing grid search results](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%203/assignment_3_2.ipynb)**:
+     
      ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/bias%20testing%20grid%20search%20results.png)
+   * **[Variable importance for stolen model](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%204/assignment_4_2.ipynb)**:
+     ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/variable%20importance%20for%20stolen%20model.png)
+   * **[Adversarial examples](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%204/assignment_4_2.ipynb)**:
+     ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/adversarial%20examples.png)
+   * **[Global logloss residuals](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%205/assignment_4_5.ipynb)**:
+     ![image](https://raw.githubusercontent.com/Mshuning/DNSC6290/main/Image/global%20logloss%20residuals.png)
 
 ## Ethical Considerations
 * **Describe potential negative impacts of using your model**

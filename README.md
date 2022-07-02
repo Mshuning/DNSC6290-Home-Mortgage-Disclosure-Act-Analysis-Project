@@ -97,18 +97,18 @@ Final selected model is **Monotonic XGBoost**, and the other models are here for
     - seaborn==0.11.1
     - xgboost==1.4.2
 - **Hyperparameters or other settings of your model**: 
-    - 'max_bins': 512,
-    - 'max_interaction_bins': 32,
-    - 'interactions': 10,
-    - 'outer_bags': 8,
-    - 'inner_bags': 4,
-    - 'learning_rate': 0.05,
-    - 'validation_size': 0.5,
-    - 'min_samples_leaf': 5,
-    - 'max_leaves': 5,
+    - 'colsample_bytree': 0.3,
+    - 'colsample_bylevel': 0.3,
+    - 'eta': 0.05,
+    - 'max_depth': 3,
+    - 'reg_alpha': 0.0005,
+    - 'reg_lambda': 0.0005,
+    - 'subsample': 0.3,
+    - 'min_child_weight': 10,
+    - 'gamma': 0.2
     - 'early_stopping_rounds': 100.0,
     - 'n_jobs': 4,
-    - 'random_state': 12345
+    - 'random_state': 12345,
     - 'mono_constraints': (1, 1, 1, -1, 0, -1, 0, 1, 0, 1)
 
 ## Quantitative Analyses

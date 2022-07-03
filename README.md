@@ -74,7 +74,7 @@ Final selected model is **Monotonic XGBoost**, and the other models are here for
 ## Evaluation Data
 * **Source of test data**: [Home Mortgage Disclosure Act (HMDA) data](https://www.consumerfinance.gov/data-research/hmda/)
 * **Number of rows in test data**: 19,831
-* **State any differences in columns between training and test data**: The test data does not contain the target column
+* **State any differences in columns between training and test data**: The test data does not contain the target column.
 
 ## Model Details
 - **Final selected model**: Monotonic XGBoost

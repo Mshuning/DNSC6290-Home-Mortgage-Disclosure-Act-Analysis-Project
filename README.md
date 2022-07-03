@@ -116,9 +116,9 @@ Final selected model is **Monotonic XGBoost**, and the other models are here for
 
   | Partition | AUC | 
   | -------------|--------| 
-  | Training | 0.7905 | 
-  | Validation | 0.7920 | 
-  | Evaluation | 0.8294 | 
+  | [Training](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%205/assignment_5_2.ipynb) | 0.7894 | 
+  | [Validation](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%203/assignment_3_2.ipynb) | 0.7907 | 
+  | [Evaluation](https://github.com/jphall663/GWU_rml/blob/master/assignments/model_eval_2022_06_13_09_47_08.csv) | 0.8294 | 
 
   | Compare v. Control | AIR | 
   | ----------------------------|-------| 
@@ -156,7 +156,7 @@ Final selected model is **Monotonic XGBoost**, and the other models are here for
 ## Ethical Considerations
 * **Describe potential negative impacts of using your model**
   * **Math or software problems**: Due to compatibility issues between `h2o` and `xgboost`, the [stolen decision tree model](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%204/assignment_4_2.ipynb) generated had unusual big numbers, causing [adversial examples](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%204/assignment_4_2.ipynb) full of missing values. 
-  * **Real-world risks: who, what, when or how**: The adverse impact ratio of Black-to-White, although > 0.8, is relatively low (0.805). When using this model to predict high-priced mortgages, black people will be given results with lower quality compared to white people with similar conditions. 
+  * **Real-world risks: who, what, when or how**: The adverse impact ratio of Black-to-White, although > 0.8, is relatively low (0.805), which could lead to unfair difference in outcomes. When using this model to predict high-priced mortgages, for every 100,000 low priced loans to white people, there are only 80,500 low-priced loans to Black people. 
 * **Describe potential uncertainties relating to the impacts of using your model**
   * **Math or software problems**: With different versions of software, some codes may need to be changed, especially for `xgboost`. 
   * **Real-world risks: who, what, when or how**: Hackers may steal the model to do model extraction attack. According to [adversial examples results in Red-teaming](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%204/assignment_4_2.ipynb), the hackers can get predictions they want by inputting missing values in multiple features. 

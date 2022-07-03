@@ -122,9 +122,9 @@ Final selected model is **Monotonic XGBoost**, and the other models are here for
 
   | Compare v. Control | AIR | 
   | ----------------------------|-------| 
-  | Asian people vs. White people | 1.146 |  
-  | Black people vs. White people | 0.805 | 
-  | Females vs. Males | 0.949 | 
+  | [Asian people vs. White people](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%203/assignment_3_2.ipynb) | 1.146 |  
+  | [Black people vs. White people](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%203/assignment_3_2.ipynb) | 0.805 | 
+  | [Females vs. Males](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%203/assignment_3_2.ipynb) | 0.949 | 
 
 * **Provide any plots related to your data or final model -- be sure to label the plots!**:
    * **[Global feature importance](https://github.com/Mshuning/DNSC6290/blob/main/Assignment%202/assignment_2.ipynb)**:

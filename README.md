@@ -110,7 +110,7 @@ Final selected model is **Monotonic XGBoost**, and the other models are here for
     - 'random_state': 12345,
     - 'mono_constraints': (1, 1, 1, -1, 0, -1, 0, 1, 0, 1)
 
-## Quantitative Analyses
+## Quantitative Analysis
 * **Metrics used to evaluate your final model**: AUC & AIR
 * **State the final values of the metrics for all data: training, validation, and test data**:
 
